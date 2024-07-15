@@ -27,48 +27,48 @@ This project ensures efficient internal service management with minimal manual i
 
 ## How to Set Up
 ### Clone the Repository:
-\`\`\`sh
+````sh
 git clone https://github.com/yourusername/yourrepository.git
-\`\`\`
+````
 
 ### Extract Files:
 Extract the `.env` file and the two scripts (`setup_and_run.sh` and `update_traefik_and_pihole.py`) to the Traefik folder.
 - **For Unraid:**
-\`\`\`sh
+```` sh
 mv .env setup_and_run.sh update_traefik_and_pihole.py /mnt/user/appdata/traefik/
-\`\`\`
+````
 - **For Docker Compose:**
-\`\`\`sh
+```` sh
 mv .env setup_and_run.sh update_traefik_and_pihole.py /opt/appdata/traefik/
-\`\`\`
+````
 
 ### Configure .env File:
-\`\`\`env
+```` env
 PIHOLE_API_TOKEN=your_pihole_api_token
 PIHOLE_SERVER_URL=http://10.10.10.10/admin/api.php
 DOMAIN_NAME=local.jrtechconsult.com
 CONFIG_FILE_PATH=/mnt/user/appdata/traefik/config.yml
-\`\`\`
+````
 
 ### Make the Shell Script Executable:
 - **For Unraid:**
-\`\`\`sh
+```` sh
 chmod +x /mnt/user/appdata/traefik/setup_and_run.sh
-\`\`\`
+````
 - **For Docker Compose:**
-\`\`\`sh
+```` sh
 chmod +x /opt/appdata/traefik/setup_and_run.sh
-\`\`\`
+````
 
 ### Run the Script:
 Navigate to the Traefik directory and run the setup script:
 - **For Unraid:**
-\`\`\`sh
+````sh
 cd /mnt/user/appdata/traefik
 ./setup_and_run.sh
-\`\`\`
+````
 - **For Docker Compose:**
-\`\`\`sh
+````sh
 cd /opt/appdata/traefik
 ./setup_and_run.sh
-\`\`\`
+````
