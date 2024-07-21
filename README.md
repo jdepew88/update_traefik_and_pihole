@@ -46,7 +46,7 @@ mv .env setup_and_run.sh update_traefik_and_pihole.py /opt/appdata/traefik/
 ```` env
 PIHOLE_API_TOKEN=your_pihole_api_token
 PIHOLE_SERVER_URL=http://10.10.10.10/admin/api.php
-DOMAIN_NAME=local.jrtechconsult.com
+DOMAIN_NAME=local.mydomain.com
 CONFIG_FILE_PATH=/mnt/user/appdata/traefik/config.yml
 ````
 
